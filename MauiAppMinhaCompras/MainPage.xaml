@@ -5,24 +5,27 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+            Padding="30,0"  
+            Spacing="25"> 
             <Image
-                Source="dotnet_bot.png"
+                Source="dotnet_bot.png" 
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
+            <!-- Imagem carregada localmente. Certifique-se de que "dotnet_bot.png" está na pasta correta do projeto. -->
 
             <Label
                 Text="Hello, World!"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+            <!-- Exemplo de uso de estilos. Certifique-se de que "Headline" está definido em seus estilos -->
 
             <Label
                 Text="Welcome to &#10;.NET Multi-platform App UI"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <!-- O código "&#10;" adiciona uma quebra de linha no texto. -->
 
             <Button
                 x:Name="CounterBtn"
@@ -30,6 +33,8 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <!-- O evento "Clicked" deve ter um método "OnCounterClicked" implementado no code-behind.-->
+
         </VerticalStackLayout>
     </ScrollView>
 

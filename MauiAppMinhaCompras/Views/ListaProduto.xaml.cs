@@ -1,5 +1,5 @@
 using System.Collections.ObjectModel;
-using MauiAppMinhaCompras.Models;
+using MauiAppMinhasCompras.Models;
 
 namespace MauiAppMinhaCompras.Views;
 
@@ -42,6 +42,7 @@ public partial class ListaProduto : ContentPage
         }
     }
 
+    // Pesquisa de produtos
     private async void txt_search_TextChanged(object sender, TextChangedEventArgs e)
     {
         try
@@ -121,5 +122,4 @@ public partial class ListaProduto : ContentPage
             DisplayAlert("Ops", ex.Message, "Ok");
         }
     }
-}
 }

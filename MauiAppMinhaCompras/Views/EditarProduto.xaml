@@ -6,16 +6,23 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked"/>
+        <!-- Botão de salvar adicionado à barra de ferramentas. Quando clicado, chama o evento "ToolbarItem_Clicked" -->
     </ContentPage.ToolbarItems>
 
     <VerticalStackLayout Spacing="10" Padding="10">
         <Label  Text="Descrição do Produto:"/>
+        <!-- Label informando o campo de entrada para a descrição do produto -->
         <Entry  x:Name="txt_descricao" Text="{Binding Descricao}"/>
+        <!-- Campo de entrada (Entry) para editar a descrição do produto, vinculado à propriedade "Descricao" -->
 
         <Label Text="Quantidade:" />
+        <!-- Label para o campo de entrada de quantidade do produto -->
         <Entry x:Name="txt_quantidade" Text="{Binding Quantidade}" Keyboard="Numeric" />
+        <!-- Campo de entrada (Entry) para a quantidade, configurado para teclado numérico, vinculado à propriedade "Quantidade" -->
 
         <Label Text="Preço Unitário:" />
+        <!-- Label informando o campo de preço unitário -->
         <Entry x:Name="txt_preco" Text="{Binding Preco}" Keyboard="Numeric" />
+        <!-- Campo de entrada (Entry) para o preço unitário, configurado para teclado numérico, vinculado à propriedade "Preco" -->
     </VerticalStackLayout>
 </ContentPage>

@@ -6,20 +6,20 @@ namespace MauiAppMinhaCompras
     {
         public static MauiApp CreateMauiApp()
         {
-            var builder = MauiApp.CreateBuilder();
+            var builder = MauiApp.CreateBuilder(); // Cria o construtor do aplicativo MAUI.
             builder
-                .UseMauiApp<App>()
+                .UseMauiApp<App>() // Define a classe principal do aplicativo.
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"); // Adiciona fonte personalizada.
+                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold"); // Outra fonte personalizada.
                 });
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug(); // Ativa logs de depuração apenas no modo DEBUG.
 #endif
 
-            return builder.Build();
+            return builder.Build(); // Retorna o aplicativo configurado.
         }
     }
 }

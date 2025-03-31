@@ -15,7 +15,7 @@
                             Environment.SpecialFolder.LocalApplicationData),
                         "banco_sqlite_compras.db3");
 
-                    _db = new SQLiteDatabeseHelper(".... db3");
+                    _db = new SQLiteDatabeseHelper(".... db3"); //* Provável erro de instanciamento. O caminho do banco de dados deveria ser usado aqui.
                 }
 
                 return _db;
@@ -26,7 +26,8 @@
             InitializeComponent();
 
             //MainPage = new AppShell();
-            MainPage = new NavigationPage(new Views.ListaProduto())
+            MainPage = new NavigationPage(new Views.ListaProduto()) //* Esqueceram o ponto e vírgula no final da linha.
         }
+    }
     }
 }

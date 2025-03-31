@@ -1,29 +1,24 @@
 ﻿using SQLite;
 
-namespace MauiAppMinhaCompras.Models
+namespace MauiAppMinhasCompras.Models
 {
     public class Produto
     {
-        string _descricao;
+        [PrimaryKey, AutoIncrement]
 
-        [PrimaryKey,AutoIncrement]
+        //Id do produto
         public int Id { get; set; }
-        public string Descricao { 
-            get => _descricao;
-            set
-            {
-                if (value == null)
-                {
-                    throw new Exception(
-                        "Por favor, preencha a descrição");
 
-                }
+        //Nome do produto
+        public string Descricao { get; set; }
 
-                _descricao = value;
-            }    
-        }
+        //Quantidade do produto
         public double Quantidade { get; set; }
+
+        //Preço do produto
         public double Preco { get; set; }
-        public double Total { get => Quantidade * Preco;}
-    } // fecha classe
+
+        //Total do produto
+        public double Total { get => Quantidade * Preco; }
+    }
 }

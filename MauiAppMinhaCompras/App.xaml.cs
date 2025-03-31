@@ -1,4 +1,6 @@
-﻿namespace MauiAppMinhaCompras
+﻿using MauiAppMinhaCompras.Helpers;
+
+namespace MauiAppMinhaCompras
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
 
         public static SQLiteDatabeseHelper Db
         {
-            get 
+            get
             {
                 if (_db == null)
                 {
@@ -19,15 +21,15 @@
                 }
 
                 return _db;
+            }
         }
-    }
         public App()
         {
             InitializeComponent();
 
             //MainPage = new AppShell();
-            MainPage = new NavigationPage(new Views.ListaProduto()) //* Esqueceram o ponto e vírgula no final da linha.
+            MainPage = new NavigationPage(new Views.ListaProduto()); //* Esqueceram o ponto e vírgula no final da linha.
         }
     }
-    }
+
 }

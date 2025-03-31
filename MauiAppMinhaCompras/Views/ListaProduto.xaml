@@ -11,7 +11,7 @@
     </ContentPage.ToolbarItems>
 
     <VerticalStackLayout>
-        <SarchBar xNAme="txt_search" 
+        <SarchBar x:Name="txt_search" 
                   Placaholder="Busca de Produtos"
                   TextChanged="txt_search_TextChanged"/>
         <!-- Barra de pesquisa para filtrar os produtos listados. -->

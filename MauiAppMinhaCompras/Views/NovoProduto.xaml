@@ -10,7 +10,7 @@
     </ContentPage.ToolbarItens>
 
     <VerticalStackLayout>
-        <Label Text="Descrição do Produto:" Pedding="'0"/>
+        <Label Text="Descrição do Produto:" Padding="0"/>
         <!-- Rótulo para o campo de descrição do produto.-->
         <Entry x:Name="txt_descrição" />
         <!-- Campo de entrada para a descrição do produto.-->
